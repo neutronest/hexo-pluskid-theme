@@ -1,0 +1,25 @@
+# Header
+menu:
+  Home: /
+  Archives: /archives
+  About: /about
+rss: /atom.xml
+
+# Content
+excerpt_link: Read More
+
+
+# Sidebar
+sidebar: right
+widgets:
+- category
+- tag
+- tagcloud
+- archive
+- recent_posts
+
+# Miscellaneous
+github: https://github.com/neutronest
+twitter: https://twitter.com/toosaka_
+facebook: https://www.facebook.com/neutronest
+google: https://google.com/neutronest
