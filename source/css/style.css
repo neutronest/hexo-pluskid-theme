@@ -1,0 +1,152 @@
+@import url(http://fonts.googleapis.com/css?family=Lato:100,300,400,300italic|Vollkorn:400italic,400);
+
+.content {
+  font-family: 'Lato', sans-serif;
+  width: 960px;
+  border: 1px solid #BBB;
+  border-radius: 8px;
+  box-shadow: 1px 1px 10px #BBB;
+  margin: 5px auto;
+  position: relative;
+}
+
+/* reset */
+a {
+  text-decoration: none;
+  color: #889;
+}
+a:hover {
+  color: #000;
+}
+
+/* navigation bar */
+#nav ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  text-align: center;
+}
+#nav ul li {
+  display: inline;
+}
+#nav ul li a {
+  display: inline-block;
+  margin: 0 10px;
+  padding: 10px 0;
+  text-transform: uppercase;
+  font-family: 'Vollkorn', serif;
+  font-size: 25px;
+  font-weight: bold;
+  border-bottom: 2px solid transparent;
+  #color: #000;
+  #color: #1EAEDB;
+  #color: #242839;
+  color: #AAB8CD;
+  
+}
+#nav ul li a:hover {
+  #color: #f14510;
+  color: #1EAEDB;
+  border-bottom: 2px solid #1EAEDB;
+}
+#nav ul li a.current {
+  border-bottom: 2px solid #AAA;
+}
+#nav ul li a.current:hover {
+  border-bottom: 2px solid #f14510;
+}
+
+/* styles for the index page */
+.index-page {
+  background-image: url(../img/2.png);
+  background-size: cover;
+  height: 660px;
+}
+.basic-info {
+  position: absolute;
+  right: 20px;
+  color: #555;
+  text-align: right;
+  font-family: 'Vollkorn', serif;
+}
+.basic-info h1 {
+  margin: 10px 0 0 0;
+}
+.basic-info h1 span {
+  display: inline-block;
+  width: 250px;
+  position: relative;
+  top: -3px;
+  margin-left: 8px;
+  border-bottom: 5px solid #555;
+}
+.basic-info p {
+  font-style: italic;
+  margin: 0px;
+}
+
+/* styles for about page */
+.about-page {
+  background-image: url(images/upset.png);
+  background-repeat: no-repeat;
+  background-size: 600px;
+  height: 760px;
+}
+.about-me {
+  position: absolute;
+  right: 30px;
+  bottom: 40px;
+  width: 300px;
+}
+.about-me .section {
+  margin: 40px 5px 10px 5px;
+}
+.about-me h1 {
+  text-transform: uppercase;
+  font-size: 18px;
+  margin-bottom: -8px;
+  border-top: 2px solid #333;
+}
+.about-me h1 span {
+  position: relative;
+  top: -13px;
+  background-color: #FFF;
+  padding-right: 5px;
+}
+.about-me p, .about-me ul {
+  margin-top: 0px;
+  color: #333;
+  font-weight: 300;
+}
+
+/* styles for research page */
+.research-page {
+  background-image: url(images/ninja.jpg);
+  background-repeat: no-repeat;
+  background-position: left bottom;
+  background-size: 270px;
+}
+.publication {
+  margin: 80px 40px 10px 350px;
+  font-family: 'Lato', sans-serif;
+  font-weight: 300;
+  color: #222;
+}
+.publication b {
+  font-weight: 400;
+}
+.publication ul li {
+  margin-bottom: 20px;
+}
+.publication a, .about-me a {
+  color: #6EB3EF;
+}
+
+/* styles for misc page */
+.misc-page {
+  font-weight: 300;
+}
+.misc-page .misc {
+  padding-left: 100px;
+  padding-right: 100px;
+}
