@@ -135,6 +135,12 @@ a {
   border-radius: 2px;
 }
 
+.post-content h3 {
+    font-size: 24px;
+    color: #1EAEDB;
+    margin-left: 130px;
+}
+
 .post-content img {
   margin-left: auto;
   margin-right: auto;
@@ -488,3 +494,32 @@ a {
   font-size: 2.2em;
 }
 
+.index-pagination {
+  # background-color: #f5f7f9;
+  border-top: 1px solid #eaecee;
+  border-bottom: 1px solid #eaecee;
+
+  position: relative;
+  width: 100%;
+  max-width: 960px;
+  height: 20px;
+  margin: 0 auto;
+  padding: 0;
+  box-sizing: border-box;
+
+  text-align: justify;
+  -moz-hyphens: auto;
+  -webkit-hyphens: auto;
+  hyphens: auto;
+}
+
+.index-pagination .pull-left {
+    float: left;
+    overflow: hidden;
+}
+
+.index-pagination .pull-right {
+    float: right;
+    overflow: hidden;
+
+}
