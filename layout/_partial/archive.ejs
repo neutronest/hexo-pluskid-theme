@@ -1,0 +1,41 @@
+<% if (pagination == 2){ %>
+    <% page.posts.each(function(post){ %>
+        <%- partial('post', {post: post, index: true}) %>
+    <% }) %>
+<% } else { %>
+    <% var last; %>
+    <% page.posts.each(function(post, i){ %>
+        <% var year = post.date.year(); %>
+        <% if (last != year){ %>
+            <% if (last != null){ %>
+        </div>
+            <% } %>
+            <% last = year; %>
+            <div id="blog-archives" class="container">
+                <h2><%= year %></h2>
+                
+        <% } %>
+        <!-- each article item -->
+        <article>
+            <h1>
+                <a href="<%= config.root  %><%= url_for(post.path)%>">
+                    <%= post.title || '(no title)' %>
+                </a>
+            </h1>
+            <time><%= date(post.date, 'MM Do') %></time>
+            <footer>
+                <span class="categories">
+                    posted in <%= post.categories %>,
+                    tagged with <%= post.tags %>
+                </span>
+            </footer>
+        </article>
+    <% }); %>
+    <% if (page.posts.length){ %>
+            </div>
+    <% } %>
+<% } %>
+<div class="index-pagination" role="pagination">
+    <% if (page.prev) { %><a class="pull-left" href="<%- url_for(page.prev_link) %>">← Newer Posts</a><% } %>
+    <% if (page.next) { %><a class="pull-right" href="<%- url_for(page.next_link) %>">Older Posts →</a><% } %>
+</div>
