@@ -23,3 +23,7 @@ github: https://github.com/neutronest
 twitter: https://twitter.com/toosaka_
 facebook: https://www.facebook.com/neutronest
 google: https://google.com/neutronest
+
+# variables
+resume_url: resume/resume.pdf
+github_url: github.com/neutronest
