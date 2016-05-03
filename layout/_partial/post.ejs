@@ -1,0 +1,27 @@
+<% permalink = config.url + config.root + post.path %>
+<div class="post-container">
+    <div class="post-header">
+        <h2><%- post.title %></h2>
+        <%- partial('post/meta')%>
+    </div>
+    <div class="post-content">
+        <%- post.content %>
+    </div>
+    <div class="post-epilogue container">
+        <div class="row">
+            
+                <div class="one-third column">
+                    <span>category</span>
+                    <div class="tag-list">
+                        <%= post.tags %>
+                    </div>
+                </div>
+         
+        </div>
+    </div>
+    
+    <div class="comment-container container">
+        <%- partial('post/disqus') %>
+    </div>
+    
+</div>
