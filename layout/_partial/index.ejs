@@ -3,8 +3,8 @@
 <div class="container">
     <div class="separator"></div>
     <div class="top_words">
-        <p>欢迎来到 Free Mind ，这是由 pluskid 所维护的 blog ，主要记录一些机器学习、程序设计以及各种技术和非技术的相关内容。如非特别指明，本站的文章遵循 <a href="http://creativecommons.org/licenses/by-sa/3.0/">Attribution-ShareAlike Creative Commons 协议</a>。更多文章索引请浏览 <a href="http://freemind.pluskid.org/archive">Archive</a>, <a href="http://freemind.pluskid.org/category">Categories</a>, 和 <a href="http://freemind.pluskid.org/tags">Tags</a>。
-            部分文章前后有一定的关联，也可在 <a href="http://freemind.pluskid.org/series">Series</a> 中找到索引。早期的博客文章请参见 <a href="http://blog.pluskid.org/">Free Mind 2009~2012</a> 和 <a href="http://lifegoo.pluskid.org/">Free Mind 2007~2009</a>。
+        <p> 欢迎来到 neutronest 的小站。这里记录了一些关于 程式语言应用 以及 机器学习等相关技术的文章(TECH BLOGS)。同时也包括一些生活，感想随笔 (ARTICLES)。如果你对深度学习，机器学习理论，函数式编程，形式语义等内容感兴趣，这里可能会有部分文章会对您有益（并没有 
+
         </p>
     </div>
 </div>
@@ -23,9 +23,9 @@
                     <% if (post.description){ %>
                         <%- post.description %>
                     <% } else { %>
-                        
+
                         <%= post.content.replace(/<(?:.|\n)*?>/gm, '').substring(0, 400) %>
-                        
+
                     <% } %>
                 </p>
 
@@ -39,4 +39,8 @@
     </div>
     <div class="separator"></div>
 <% });  %>
+<div class="index-pagination" role="pagination">
+    <% if (page.prev) { %><a class="pull-left" href="<%- url_for(page.prev_link) %>">← Newer Posts</a><% } %>
+    <% if (page.next) { %><a class="pull-right" href="<%- url_for(page.next_link) %>">Older Posts →</a><% } %>
+</div>
 <!-- end of section: index -->

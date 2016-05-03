@@ -13,7 +13,12 @@
                 <div class="one-third column">
                     <span>category</span>
                     <div class="tag-list">
-                        <%= post.tags %>
+                        <%- list_categories(post.categories, {
+                            show_count: false,
+                            class: "none",
+                            style: 'none',
+                            separator: ' '
+                        }) %>
                     </div>
                 </div>
          

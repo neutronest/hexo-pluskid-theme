@@ -44,7 +44,7 @@ a {
 }
 .page-header ul li {
   padding: 2px 8px 2px 8px;
-  text-transform: uppercase;
+  text-transform: lowercase;
 }
 .page-header .nav-left li {
   float: left;
@@ -86,7 +86,8 @@ a {
 }
 
 .post-container {
-  background-color: #f5f7f9;
+  #background-color: #f5f7f9;
+  background-color: #fff;
   border-top: 1px solid #eaecee;
   border-bottom: 1px solid #eaecee;
 

@@ -1,0 +1,15 @@
+<% permalink = config.url + config.root + page.path %>
+<div class="post-container">
+    <div class="post-header">
+        <h2><%- page.title %></h2>
+        
+    </div>
+    <div class="post-content">
+        <%- page.content %>
+    </div>
+    <div class="comment-container container">
+        <%- partial('post/disqus') %>
+    </div>
+    
+</div>
+
