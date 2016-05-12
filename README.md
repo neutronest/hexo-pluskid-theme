@@ -9,9 +9,9 @@ A hexo theme based on pluskid's blog: http://freemind.pluskid.org/ , Thanks plus
 
 However, this theme has been modified for my own taste, for example, using many images and words in 魔法使いの夜(Mahoutsukai no Yoru).
 
-[8 png](https://github.com/neutronest/hexo-pluskid-theme/tree/master/source/img/8.png)
+![8 png](./source/img/8.png)
 
-[7 png](https://github.com/neutronest/hexo-pluskid-theme/tree/master/source/img/7.png)
+![7 png](./source/img/7.png)
 
 # Usage
 
