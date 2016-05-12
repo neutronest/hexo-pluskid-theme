@@ -15,4 +15,22 @@ However, this theme has been modified for my own taste, for example, using many 
 
 # Usage
 
-1. In the [themes/] directory. 
+1. In the `themes/` directory:
+
+```
+git clone https://github.com/neutronest/hexo-pluskid-theme.git
+```
+2. Change the `theme` property in `config.yml` file
+
+```
+theme: hexo-pluskid-theme
+```
+
+3. Run: `hexo server`
+
+4. Hope you will not fail (x
+
+
+# Licence.
+
+MIT Licence.
