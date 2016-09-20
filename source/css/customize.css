@@ -146,6 +146,9 @@ a {
   margin-left: auto;
   margin-right: auto;
   display: block;
+  width: 100%;
+
+  
 }
 .post-content img.pull-left {
   float: left;
